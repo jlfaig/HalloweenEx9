@@ -8,9 +8,13 @@ h1 {
 }
 h2 {
     font-size:1.5em;
+    text-indent:.5em;
 }
 .BiggerLetter:first-letter {
     font-size:2.1em;
+}
+.BiggerLetter {
+    text-indent:.5em;
 }
 img {
     float:left;
@@ -18,15 +22,16 @@ img {
     margin-top:.8em;
 }.topHeading {
     text-indent:1em;
-    padding-bottom:0em;
     vertical-align:middle;
     margin:0;
     padding:0;
+    padding-top:30px;
 }
 .littleGoblin {
     text-indent:1em;
     margin:0;
     padding:0;
+    padding-top:10px;
 }
 li {
     margin-bottom:5px;
@@ -65,4 +70,10 @@ footer {
     background-color:orange;
     text-align:center;
     padding-bottom:5px;
+}
+div {
+    padding-left:10px;
+}
+p {
+    padding-left:10px;
 }
