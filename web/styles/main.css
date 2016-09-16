@@ -1,5 +1,7 @@
 html {
     font-family:"Trebuchet MS",Arial,sans-serif;
+    background-image:url("../images/bats.gif");
+    background-repeat: repeat;
 }
 h1 {
     font-size:1.8em;
@@ -12,14 +14,19 @@ h2 {
 }
 img {
     float:left;
+    margin-left:.5em;
+    margin-top:.8em;
 }.topHeading {
     text-indent:1em;
-    color:orange;
-    font-style:italic;
-    text-shadow:rgb(0,0,0) -1.2px 0, rgb(0,0,0) 0 -1.2px;
+    padding-bottom:0em;
+    vertical-align:middle;
+    margin:0;
+    padding:0;
 }
 .littleGoblin {
     text-indent:1em;
+    margin:0;
+    padding:0;
 }
 li {
     margin-bottom:5px;
@@ -35,4 +42,27 @@ a {
 footer {
     font-size:1em;
     text-align:center;
+}
+body {
+    width:800px;
+    background-color:white;
+    border-color:black;
+    box-shadow:0 0 5px 3px rgb(0,0,0);
+    margin-left:auto;
+    margin-right:auto;
+}
+header {
+    height:100%;
+    border-bottom:2px solid black;
+    background:linear-gradient(45deg,white, orange 75%,black);
+    background-color:orange;
+    padding-bottom:40px;
+}
+footer {
+    border-top:2px solid black;
+    padding-top:10px;
+    background:linear-gradient(45deg,black,orange 25%,white);
+    background-color:orange;
+    text-align:center;
+    padding-bottom:5px;
 }
