@@ -2,23 +2,38 @@ html {
     font-family:"Trebuchet MS",Arial,sans-serif;
 }
 h1 {
-    font-size:1.5em;
-    color:orange;
-    font-style:italic;
-    text-shadow:rgb(0,0,0) -1px 0, rgb(0,0,0) 0 -1px;
+    font-size:1.8em;
 }
 h2 {
-    font-size:1.2em;
+    font-size:1.5em;
 }
 .BiggerLetter:first-letter {
-    font-size:2.5em;
+    font-size:2.1em;
 }
 img {
     float:left;
 }
 .topHeading {
     text-indent:1em;
+    color:orange;
+    font-style:italic;
+    text-shadow:rgb(0,0,0) -1.2px 0, rgb(0,0,0) 0 -1.2px;
 }
 .littleGoblin {
     text-indent:1em;
+}
+li {
+    margin-bottom:5px;
+}
+a {
+    color:orange;
+    font-weight:bold;
+    line-height:10px;
+}
+ a:hover {
+    color:green;
+}
+footer {
+    font-size:1em;
+    text-align:center;
 }
