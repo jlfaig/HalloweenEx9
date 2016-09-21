@@ -36,6 +36,37 @@ img {
 li {
     margin-bottom:5px;
 }
+ul[class ^= menubar] {
+    height:auto;
+    margin:0;
+    list-style:none;
+    padding:0;
+    text-align:center;
+}
+li[class ^=menubar]{
+    display:inline;
+    color:white;
+    padding-left:30px;
+    padding-right:30px;
+}
+li[class ^= menubar] a {
+    display:inline;
+    font-style: normal;
+    text-decoration:none;
+    font-weight:normal;
+    color:white;
+    height:50px;
+    width:50px;
+}
+li[class ^= menu]
+.currentPage {
+    color:orange;
+}
+nav[class="menu"]{
+    background-color:black;
+    padding-top:5px;
+    padding-bottom:5px;
+}
 a {
     color:orange;
     font-weight:bold;
@@ -81,7 +112,7 @@ main {
     float:right;
     width:640px;
 }
-article {
+nav[class="products"] {
     float:left;
     width:160px;
 }
