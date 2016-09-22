@@ -36,31 +36,40 @@ img {
 li {
     margin-bottom:5px;
 }
-ul[class ^= menubar] {
+ul[class *= bar] {
     height:auto;
     margin:0;
     list-style:none;
     padding:0;
     text-align:center;
+    text-decoration:none;
 }
-li[class ^=menubar]{
+li[class *=bar]{
+    text-decoration:none;
     display:inline;
     color:white;
     padding-left:30px;
     padding-right:30px;
 }
+ul[class=menubar] a[class*=Page] {
+    text-decoration: none;
+}
+a[class*=Page]:hover {
+    background:grey;
+}
+.currentPage{
+    color:orange;
+}
 li[class ^= menubar] a {
+   color:white;
+}
+li [class *=bar] a {
+    text-decoration:none;
     display:inline;
     font-style: normal;
-    text-decoration:none;
     font-weight:normal;
-    color:white;
     height:50px;
     width:50px;
-}
-li[class ^= menu]
-.currentPage {
-    color:orange;
 }
 nav[class="menu"]{
     background-color:black;
@@ -71,9 +80,6 @@ a {
     color:orange;
     font-weight:bold;
     line-height:10px;
-}
- a:hover {
-    color:green;
 }
 footer {
     font-size:1em;
@@ -115,7 +121,26 @@ main {
 nav[class="products"] {
     float:left;
     width:160px;
+    margin-left:0px;
 }
 .catlink {
     clear:both;
+}
+nav[class=products] li{
+    list-style-type: none;
+    background:orange;
+    padding-top:10px;
+    padding-left:10px;
+    padding-bottom:10px;
+    padding-right:20px;
+    border-color:black;
+    border-width:2px;
+    border-style:solid;
+    text-align:left;
+    margin-left:-25px;
+}
+nav[class=products] a[class*=product]{
+    text-decoration:none;
+    color:black;
+    display:block;
 }
