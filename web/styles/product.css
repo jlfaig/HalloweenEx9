@@ -1,0 +1,181 @@
+html {
+    font-family:"Trebuchet MS",Arial,sans-serif;
+    background-image:url("../images/bats.gif");
+    background-repeat: repeat;
+}
+h1 {
+    font-size:1.8em;
+}
+h2 {
+    font-size:1.5em;
+}
+img {
+    float:left;
+    margin-left:.5em;
+    margin-top:.8em;
+}.topHeading {
+    text-indent:1em;
+    vertical-align:middle;
+    margin:0;
+    padding:0;
+    padding-top:30px;
+}
+.littleGoblin {
+    text-indent:1em;
+    margin:0;
+    padding:0;
+    padding-top:10px;
+}
+nav[class=products] li {
+    margin-bottom:5px;
+}
+ul[class *= bar] {
+    height:auto;
+    margin:0;
+    list-style:none;
+    padding:0;
+    text-align:center;
+    text-decoration:none;
+}
+li[class *=bar]{
+    text-decoration:none;
+    display:inline;
+    color:white;
+    padding-left:30px;
+    padding-right:30px;
+}
+ul[class=menubar] a[class*=Page] {
+    text-decoration: none;
+    color:white;
+}
+a[class*=Page]:hover {
+    background:grey;
+}
+li [class *=bar] a {
+    text-decoration:none;
+    display:inline;
+    font-style: normal;
+    font-weight:normal;
+    height:50px;
+    width:50px;
+    color:white;
+}
+nav[class="menu"]{
+    background-color:black;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+a {
+    color:orange;
+    font-weight:bold;
+    line-height:10px;
+}
+footer {
+    font-size:1em;
+    text-align:center;
+}
+body {
+    width:800px;
+    background-color:white;
+    border-color:black;
+    box-shadow:0 0 5px 3px rgb(0,0,0);
+    margin-left:auto;
+    margin-right:auto;
+}
+header {
+    border-bottom:2px solid black;
+    background:linear-gradient(45deg,white, orange 75%,black);
+    background-color:orange;
+    padding-bottom:40px;
+}
+footer {
+    clear:both;
+    border-top:2px solid black;
+    padding-top:10px;
+    background:linear-gradient(45deg,black,orange 25%,white);
+    background-color:orange;
+    text-align:center;
+    padding-bottom:5px;
+}
+p {
+    padding-left:10px;
+}
+main {
+    float:left;
+    width:400px;
+}
+nav[class="products"] {
+    float:left;
+    width:160px;
+    margin-left:0px;
+}
+.catlink {
+    clear:both;
+}
+.deranged {
+    padding-left:10px;
+}
+.catdesc{
+    padding-right:45px;
+}
+nav[class=products] li{
+    list-style-type: none;
+    background:orange;
+    padding-top:10px;
+    padding-left:10px;
+    padding-bottom:10px;
+    padding-right:20px;
+    border-color:black;
+    border-width:2px;
+    border-style:solid;
+    text-align:left;
+    margin-left:-25px;
+}
+nav[class=products] a[class*=product]{
+    text-decoration:none;
+    color:black;
+    display:block;
+}
+section p[class=cat] {
+    float:left;
+}
+.rightProducts{
+    float:right;
+    margin:0;
+    padding:0;
+    width:230px;
+    background:#F5DEB3;
+}
+.middle{
+    width:460px;
+}
+nav .rightProductsHead{
+   padding-left:20px;
+   padding-right:10px;
+   font-size:1.1em;
+}
+.similarProducts{
+    display:block;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+ul[class=similarProducts] li{
+    float:left;
+    padding:0;
+    margin:0;
+}
+
+ul a[class*=picLink] {
+    color:black;
+    font-weight:normal;
+    font-size:13px;
+}
+ul a[class*=picLink]:hover {
+    color:green;
+} 
+ul[class=similarProducts] figure{
+    float:left;
+    padding:0;
+    margin:0;
+}
