@@ -46,6 +46,8 @@ li[class *=bar]{
 }
 ul[class=menubar] a[class*=Page] {
     text-decoration: none;
+}
+ul[class=menubar] a[class^=P]{
     color:white;
 }
 a[class*=Page]:hover {
@@ -181,4 +183,7 @@ table {
 }
 .desc{
     font-weight:normal;
+}
+.currentPage{
+    color:orange;
 }
