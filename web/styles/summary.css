@@ -46,6 +46,8 @@ li[class *=bar]{
 }
 ul[class=menubar] a[class*=Page] {
     text-decoration: none;
+}
+ul[class=menubar] a[class^=P]{
     color:white;
 }
 a[class*=Page]:hover {
@@ -139,52 +141,53 @@ nav[class=products] a[class*=product]{
 section p[class=cat] {
     float:left;
 }
-.rightProducts{
-    float:right;
-    margin:0;
-    padding:0;
-    width:230px;
-    background:#F5DEB3;
-}
 .middle{
-    width:460px;
+    width:640px;
 }
-nav .rightProductsHead{
-   padding-left:20px;
-   padding-right:10px;
-   font-size:1.1em;
+.productListHeader{
+    text-align:center;
 }
-.similarProducts{
-    display:block;
-    margin:0;
-    padding:0;
-    list-style: none;
+.desc{
 }
-ul[class=similarProducts] li{
-    padding:0;
-    margin:0;
+.descHeader{
+    text-indent:0;
 }
-
-ul a[class*=picLink] {
+.left{
+    width:33%;
+    padding-left:15px;
+    text-align:left;
+}
+.price{
+    text-align:right;
+}
+.priceHeader{
+    text-align:right;
+}
+td[class=desc] a {
     color:black;
+}
+table {
+    width:80%;
+    margin-bottom:25px;
+    border-collapse: collapse;
+}
+.priceHeader,.price {
+    width:10%;
+    background-color:#F5DEB3; 
+    border-collapse: collapse;
+}
+.priceHeader span {
+}
+.descHeader, .desc {
+    width:40%;
+}
+.desc{
     font-weight:normal;
-    font-size:13px;
-}
-ul a[class*=picLink]:hover {
-    color:green;
-} 
-ul[class=similarProducts] figure{
-    padding:0;
-    margin:0;
-}
-figure img {
-    clear:both;
-}
-figcaption{
-    clear:both;
-    display:block;
-    padding-left:20px;
 }
 .currentPage {
     color:orange;
+}
+main{
+    width:75%;
+    padding-left:25px;
 }
