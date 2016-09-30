@@ -44,6 +44,9 @@ ul[class *= bar] {
     text-align:center;
     text-decoration:none;
 }
+.Page1 {
+    color:white;
+}
 li[class *=bar]{
     text-decoration:none;
     display:inline;

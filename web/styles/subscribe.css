@@ -184,9 +184,10 @@ table {
 .desc{
     font-weight:normal;
 }
-.currentPage{
-    color:orange;
+.currentPage {
+    color:white;
 }
-.message{
+main{
+    width:75%;
     padding-left:25px;
 }
