@@ -482,6 +482,7 @@ nav[class="menu"]{
     background-color:black;
     height:1em;
 }.menubar{
+    display:none;
     height:0;
     overflow:hidden;
     transition: height 0.3s;

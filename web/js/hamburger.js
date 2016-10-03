@@ -6,6 +6,3 @@ $('.nav-btn').on('click', function() {
         $('.menubar').addClass('open');
     }
 });
-if (window.innerWidth > 767) {
-    $('.menubar').addClass('open');
-}
