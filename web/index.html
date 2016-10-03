@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main_rwd.css">
     <link rel="stylesheet" type="text/css" href="styles/off-canvas.css">
-    
+    <link rel="stylesheet" href="js/hamburger.js">
     <title>Happy Halloween</title>
 </head>
 
@@ -24,14 +24,10 @@
     </header>
     <section class="wholeMenu">
     <nav id="drawer"></nav>
-    <div class="hamburgerMenu">
-        <a id="dropDownMenu">
-            &#9776;
-        </a>
-    </div>
     <script src="js/hamburger.js"></script>
     </section>
     <nav class="menu">
+        <span class="nav-btn">&#9776;</span>
         <ul class="menubar">
             <li class="bar-1"><a class="currentPage" href="index.html" title="Home Option">Home</a></li>
             <li class="menubar-2"><a class="Page2" href="slides/products/productList.html" title="Product List Option">Product List</a></li>
@@ -40,7 +36,12 @@
             <li class="menubar-5"><a class="Page5" href="email.html" title="Join Email Option">Join Email</a></li>
         </ul>
     </nav>
-    <script src="js/hamburger.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $('span.nav-btn').click(function () {
+            $('ul.menubar').toggle();
+        })
+    </script>
     <main>
           <h1 class="BiggerLetter"> Welcome to my site. <br /> Please come in and stay awhile.</h1>
           <div>

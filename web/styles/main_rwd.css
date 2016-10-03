@@ -17,6 +17,9 @@ h2 {
 .BiggerLetter {
     padding-left:1em;
 }
+.hamburgerSymbol {
+  display: none;
+}
 header{
     padding:0em;
     width:100%;
@@ -245,6 +248,7 @@ ul[class *= bar] {
     text-align:center;
     text-decoration:none;
 }
+
 li[class *=bar]{
     text-decoration:none;
     display:inline;
@@ -360,18 +364,6 @@ html {
     font-family:"Trebuchet MS",Arial,sans-serif;
     background:white;
 }
-.wholeMenu{
-    display:flex;
-    flew-flow: row nowrap;
-}
-.drawer{
-    position:relative;
-    transform:translate(0,0);
-}
-.hamburgerMenu{
-    flex-grow: 1;
-    width:auto;
-}
 h1 {
     font-size:1.62em;
 }
@@ -438,10 +430,26 @@ ul[class *= bar] {
 }
 li[class *=bar]{
     text-decoration:none;
-    display:inline;
     color:white;
+    display:inline-block;
     padding-left:2em;
     padding-right:2em;
+}
+.nav-btn {
+    display:block;
+    background-color:black;
+    color:white;
+    font-size:0.9em;
+    text-align:right;
+    cursor:pointer;
+}
+.nav-btn:before {
+    content:"Menu  ";
+}
+nav[class=menu] li{
+    text-align:left;
+    display:block;
+    width:20%;
 }
 ul[class=menubar] a[class*=Page] {
     text-decoration: none;
@@ -473,24 +481,13 @@ nav[class="menu"]{
     width:100%;
     background-color:black;
     height:1em;
+}.menubar{
+    height:0;
+    overflow:hidden;
+    transition: height 0.3s;
 }
-.hamburger{
-    background:none;
-    position:absolute;
-    color:white;
-    font-weight:bold;
-    cursor:pointer;
-    width:10%;
-    margin-left:90%;
-}
-.cross{
-    background:none;
-    position:absolute;
-    color:white;
-    font-weight:bold;
-    cursor:pointer;
-    width:10%;
-    margin-left:90%;
+.open{
+    height:30%;
 }
 a {
     color:orange;

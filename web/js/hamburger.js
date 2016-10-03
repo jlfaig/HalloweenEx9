@@ -1,13 +1,11 @@
-var menu = document.querySelector('.dropDownMenu');
-var main = document.querySelector('.hamburgerMenu');
-var drawer = document.querySelector('#drawer');
-
-menu.addEventListener('click', function (e) {
-    drawer.classList.toggle('open');
-    e.stopPropagation();
-    e.preventDefault();
+$('.nav-btn').on('click', function() {
+    $('.menubar').addClass('open');
+    if ($('.menubar').hasClass('open')){
+        $('.menubar').removeClass('open');
+    } else {
+        $('.menubar').addClass('open');
+    }
 });
-
-main.addEventListener('click', function() {
-    drawer.classList.remove('open');
-});
+if (window.innerWidth > 767) {
+    $('.menubar').addClass('open');
+}
